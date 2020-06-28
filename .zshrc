@@ -109,7 +109,9 @@ export LANG=en_SG.UTF-8
 alias zshconfig="vim ~/.zshrc"
 alias rezsh="source ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
-#alias python="/usr/bin/python3"
+
+# Managing dotfiles with git bare repository
+alias config='/usr/bin/git --git-dir=/home/xavier/.cfg/ --work-tree=/home/xavier'
 
 #Shotcuts
 j() {
@@ -119,5 +121,5 @@ j() {
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Managing dotfiles with git bare repository
-alias config='/usr/bin/git --git-dir=/home/xavier/.cfg/ --work-tree=/home/xavier'
+# Run neofetch on start
+neofetch
